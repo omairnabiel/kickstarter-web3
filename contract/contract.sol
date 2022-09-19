@@ -1,11 +1,11 @@
 pragma solidity ^0.5.0;
 
 contract Campaign {
-	manager: address
-	minimumContribution: uint
+	address public manager;
+	uint public minimumContribution;
 
 	function Campaign(uint minimum) public {
-		manager = msg.sender
-		minimumContribution = minimum
+		manager = msg.sender;
+		minimumContribution = minimum;
 	}
 }
